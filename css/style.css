@@ -453,20 +453,46 @@ header nav ul li a img{
   border-bottom: 1px solid black;
 }
 
-.list-faq p{
+.list-faq .faq{
   padding: 32px 0;
   border-bottom: 1px solid black;
+  position: relative;
 }
+
+
 
 .list-faq p:nth-child(odd){
   font-weight: 800;
 }
 
-.faq p:nth-child(2){
+.list-faq p:nth-child(even){
+  padding-top: 32px;
+}
+
+.faq p{
+  width: 90%;
+}
+
+.faq p:last-of-type{
   display: none;
 }
 
-.faq:hover p:nth-child(2){
+.faq:hover p:last-of-type{
+  display: block;
+}
+
+.faq .fa-solid{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+}
+
+.faq .fa-angle-up{
+  display: none;
+  background-color: white;
+}
+
+.faq:hover .fa-angle-up{
   display: block;
 }
 
