@@ -395,6 +395,7 @@ header nav ul li a img{
   /*DOMANDA: va bene così?? */
 
   text-align: center;
+  color: white;
 }
 
 .logo-team:active{
@@ -406,6 +407,7 @@ header nav ul li a img{
   position: relative;
   top: 50%;
   transform: translate(0,-50%);
+  filter: invert(1);
 }
 
 .team-info .center{
