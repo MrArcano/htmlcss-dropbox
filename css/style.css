@@ -1,0 +1,36 @@
+/* GENERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITY */
+
+.border-box *{
+  border: 2px solid black;
+  min-height: 100px;
+}
+
+.container{
+  max-width: 1200px;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.container-small{
+  max-width: 1000px;
+}
+
+.flex-box{
+  display: flex;
+}
+
+/* HEADER */
+header{
+  justify-content: space-between;
+}
+
+/* MAIN */
+
+/* FOOTER */
