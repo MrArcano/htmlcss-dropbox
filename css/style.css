@@ -24,6 +24,10 @@ h1{
   font-weight: 800;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* UTILITY */
 
 .border-box *{
@@ -76,7 +80,6 @@ header nav ul li a{
 }
 
 header nav ul li a{
-  text-decoration: none;
   color: black;
   font-weight: bold;
 }
@@ -114,10 +117,18 @@ header nav ul li a img{
 }
 
 .hero-image{
-  width: 70%;
+  width: 75%;
 }
 
 .hero-text{
-  width: 30%;
+  width: 35%;
+}
+
+.hero .container>div{
+  padding-top: 40px;
+}
+
+.hero-text div{
+  margin: 40px 0;
 }
 /* FOOTER */
