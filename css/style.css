@@ -1,3 +1,9 @@
+:root{
+  --hero-color: #b4d0e7;
+  --btn-color: #0061ff;
+}
+
+
 /* GENERAL */
 *{
   margin: 0;
@@ -5,11 +11,14 @@
   box-sizing: border-box;
 }
 
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
 /* UTILITY */
 
 .border-box *{
   border: 2px solid black;
-  min-height: 100px;
 }
 
 .container{
@@ -29,8 +38,26 @@
 /* HEADER */
 header{
   justify-content: space-between;
+  height: 80px;
+  border-bottom: 2px solid lightgray;
 }
 
+header ul{
+  align-items: center;
+}
+
+header ul li{
+  list-style: none;
+  padding: 0 8px;
+}
+
+.header-left{
+  height: 100%;
+}
 /* MAIN */
+
+.hero{
+  background-color: var(--hero-color);
+}
 
 /* FOOTER */
