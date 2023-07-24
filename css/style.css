@@ -324,16 +324,13 @@ header nav ul li a img{
 
 /* section feature */
 /* -------------------------------------------- */
-.box-feature h2{
-  margin-bottom: 48px;
-}
-
 .feature-container{
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .feature{
+  margin-top: 48px;
   width: 30%;
 }
 
