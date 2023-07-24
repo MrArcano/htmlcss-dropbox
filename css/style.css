@@ -19,6 +19,11 @@ img{
   max-width: 100%;
 }
 
+h1{
+  font-size: 75px;
+  font-weight: 800;
+}
+
 /* UTILITY */
 
 .border-box *{
@@ -42,7 +47,9 @@ img{
 
 /* HEADER */
 header{
+  background-color: white;
   position: fixed;
+  z-index: 999;
   top: 0px;
   width: 100%;
 }
@@ -99,7 +106,18 @@ header nav ul li a img{
 .hero{
   margin-top: 80px; /* header fixed height */
   background-color: var(--hero-color);
-  height: 400px; /* debug */
+  min-height: 400px; /* debug */
 }
 
+.hero .container{
+  padding: 100px 0;
+}
+
+.hero-image{
+  width: 70%;
+}
+
+.hero-text{
+  width: 30%;
+}
 /* FOOTER */
