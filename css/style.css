@@ -21,8 +21,13 @@ img{
 }
 
 h1{
-  font-size: 75px;
+  /* font-size: 75px; */
+  font-size: 5rem;
   font-weight: 800;
+}
+
+h2{
+  font-size: 2.5rem;
 }
 
 a{
@@ -106,6 +111,8 @@ header nav ul li a img{
 
 /* MAIN */
 
+/* HERO */
+/* -------------------------------------------- */
 .hero{
   margin-top: 80px; /* header fixed height */
   background-color: var(--hero-color);
@@ -140,4 +147,17 @@ header nav ul li a img{
 
   font-size: 40px;
 }
+/* -------------------------------------------- */
+
+/* section SUBSCRIPTION TYPE */
+/* -------------------------------------------- */
+.subscription-type{
+  margin-top: 150px;
+}
+
+.col{
+  width: calc(100% / 3);
+}
+/* -------------------------------------------- */
+
 /* FOOTER */
