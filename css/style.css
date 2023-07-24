@@ -32,6 +32,7 @@ h2{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 /* UTILITY */
@@ -53,6 +54,29 @@ a{
 
 .flex-box{
   display: flex;
+}
+
+.btn{
+  background-color: var(--btn-color);
+  color: white;
+  padding: 8px 16px;
+}
+
+.btn:hover{
+  background-color: rgba(0, 98, 255, 0.8);
+}
+
+.btn-big{
+  padding: 14px 20px;
+}
+
+.btn-white{
+  background-color: white;
+  color: white;
+}
+
+.btn-border{
+  border: 1px solid black;
 }
 
 /* HEADER */
@@ -85,10 +109,6 @@ header nav ul li a{
   line-height: 80px;
 }
 
-header nav ul li a{
-  color: black;
-}
-
 header ul li:not(.no-border):hover {
   border-bottom: 2px solid white;
 }
@@ -96,16 +116,6 @@ header ul li:not(.no-border):hover {
 header nav ul li a img{
   object-fit: cover;
   
-}
-
-.btn{
-  background-color: var(--btn-color);
-  color: white;
-  padding: 8px 16px;
-}
-
-.btn:hover{
-  background-color: rgba(0, 98, 255, 0.8);
 }
 
 
@@ -147,11 +157,12 @@ header nav ul li a img{
 
   font-size: 40px;
 }
+
 /* -------------------------------------------- */
 
 /* section SUBSCRIPTION TYPE */
 /* -------------------------------------------- */
-.subscription-type{
+.subscription-type.container{
   margin-top: 150px;
 }
 
