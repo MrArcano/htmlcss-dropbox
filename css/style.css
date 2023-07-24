@@ -442,7 +442,36 @@ header nav ul li a img{
   margin: 150px 0;
   color: #61082b;
 }
+/* -------------------------------------------- */
 
 /* -------------------------------------------- */
+/* FAQ */
+/* -------------------------------------------- */
+
+.list-faq h2{
+  padding-bottom: 32px;
+  border-bottom: 1px solid black;
+}
+
+.list-faq p{
+  padding: 32px 0;
+  border-bottom: 1px solid black;
+}
+
+.list-faq p:nth-child(odd){
+  font-weight: 800;
+}
+
+.faq p:nth-child(2){
+  display: none;
+}
+
+.faq:hover p:nth-child(2){
+  display: block;
+}
+
+/* -------------------------------------------- */
+
+
 
 /* FOOTER */
