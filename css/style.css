@@ -61,7 +61,7 @@ ul{
   max-width: 1000px;
 }
 
-section.container, section{
+section.container, section.team-info{
   margin-top: 150px; 
   /* imposto un margine a tutte le section */
 }
@@ -90,6 +90,10 @@ section.container, section{
 .btn-white:not(.default){
   background-color: white;
   color: black;
+}
+
+.btn.btn-white:hover{
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-border:not(.default){
@@ -353,6 +357,7 @@ header nav ul li a img{
 /* -------------------------------------------- */
 .bkg-light-green{
   background-color: #a2d39b;
+  border: 16px solid rgba(255, 255, 255, 0.5);
 }
 .bkg-dark-red{
   background-color: #61082b;
@@ -387,7 +392,7 @@ header nav ul li a img{
 .logo-team{
   width: 50%;
   aspect-ratio: 1 / 1;
-  /*DOMANDA: ci sono altri modi?? */
+  /*DOMANDA: va bene così?? */
 
   text-align: center;
 }
@@ -405,10 +410,37 @@ header nav ul li a img{
 
 .team-info .center{
   padding: 50px;
+  aspect-ratio: 1 / 1;
+  overflow-y: auto;
 }
 
 .team-info .center img{
   width: 50%;
+}
+
+.team-info .center p{
+  margin-bottom: 50px;
+}
+/* fine team info with square */
+/* -------------------------------------------- */
+
+/* -------------------------------------------- */
+/* start business section */
+/* -------------------------------------------- */
+
+.start-business{
+  background-color: #b4d0e7;
+}
+
+.start-business .container{
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start-business h2{
+  width: 550px;
+  margin: 150px 0;
+  color: #61082b;
 }
 
 /* -------------------------------------------- */
