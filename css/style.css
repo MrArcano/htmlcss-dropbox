@@ -15,10 +15,15 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 
+img{
+  max-width: 100%;
+}
+
 /* UTILITY */
 
 .border-box *{
-  border: 2px solid black;
+  border: 1px solid black;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .container{
@@ -37,27 +42,64 @@ html{
 
 /* HEADER */
 header{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+header nav{
   justify-content: space-between;
+  align-items: center;
   height: 80px;
   border-bottom: 2px solid lightgray;
 }
 
-header ul{
-  align-items: center;
-}
-
-header ul li{
+header nav ul{
   list-style: none;
-  padding: 0 8px;
 }
 
-.header-left{
-  height: 100%;
+header nav ul li{
+  padding: 0 16px;
+  height: 80px;
 }
+
+header nav ul li a{
+  display: inline-block;
+  line-height: 80px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+header ul li:not(.no-border):hover {
+  border-bottom: 2px solid white;
+}
+
+header nav ul li a img{
+  object-fit: cover;
+  
+}
+
+.btn{
+  background-color: var(--btn-color);
+  color: white;
+  padding: 8px 16px;
+}
+
+.btn:hover{
+  background-color: rgba(0, 98, 255, 0.8);
+}
+
+
 /* MAIN */
 
 .hero{
+  margin-top: 80px; /* header fixed height */
   background-color: var(--hero-color);
+  height: 400px; /* debug */
 }
 
 /* FOOTER */
