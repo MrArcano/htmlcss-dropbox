@@ -186,7 +186,7 @@ header nav ul li a img{
 
 .check-invoice .select{
   padding-right: 32px;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 .check-invoice .select::before{
@@ -218,11 +218,15 @@ header nav ul li a img{
 }
 
 .subscription-type .row .col{
-  width: 30%;
+  width: 30%; 
+}
+
+.subscription-type .col{
+  margin-top: 50px;
   border: 1px solid lightgray;
 }
 
-.subscription-type .row .col .type-title{
+.subscription-type .col .type-title{
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -230,7 +234,7 @@ header nav ul li a img{
   padding: 16px;
 }
 
-.subscription-type .row .col .type-text{
+.subscription-type .col .type-text{
   padding: 32px;
 }
 
@@ -281,6 +285,14 @@ header nav ul li a img{
 .fa-check{
   color: #0061ff;
   font-weight: 900;
+}
+
+.team-right{
+  width: 30%;
+}
+
+.team-left .price{
+  margin-bottom: 48px;
 }
 /* -------------------------------------------- */
 
