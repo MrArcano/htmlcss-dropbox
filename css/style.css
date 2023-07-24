@@ -61,6 +61,11 @@ ul{
   max-width: 1000px;
 }
 
+section.container, section{
+  margin-top: 150px; 
+  /* imposto un margine a tutte le section */
+}
+
 .flex-box{
   display: flex;
 }
@@ -77,13 +82,14 @@ ul{
 }
 
 .btn-big:not(.default){
-  min-width: 240px; /* ho dovuto dare una width per il button "CONTATTACI" */
+  width: 100%;
+  max-width: 258px;
   padding: 14px 20px;
 }
 
 .btn-white:not(.default){
   background-color: white;
-  color: white;
+  color: black;
 }
 
 .btn-border:not(.default){
@@ -93,6 +99,7 @@ ul{
 .font-color-gray{
   color: gray;
 }
+
 
 /* HEADER */
 header{
@@ -177,9 +184,6 @@ header nav ul li a img{
 
 /* section SUBSCRIPTION TYPE */
 /* -------------------------------------------- */
-.subscription-type.container{
-  margin-top: 150px;
-}
 
 /* CheckBox CSS */
 /* ----------------------- */
@@ -218,7 +222,8 @@ header nav ul li a img{
 }
 
 .subscription-type .row .col{
-  width: 30%; 
+  /* se la col è dentro una row la sua width è del 30%*/
+  max-width: 30%; 
 }
 
 .subscription-type .col{
@@ -235,7 +240,7 @@ header nav ul li a img{
 }
 
 .subscription-type .col .type-text{
-  padding: 32px;
+  padding: 20px;
 }
 
 .subscription-type h3{
@@ -255,18 +260,18 @@ header nav ul li a img{
 
 .subscription-type ul li{
   position: relative;
-  left: 24px;
+  padding-left: 24px;
   margin-bottom: 24px;
 }
 
 .subscription-type ul li i{
   position: absolute;
-  left: -24px;
+  left: 0;
   top: 2px;
 }
 
 .subscription-type .btn{
-  display: inline-block;
+  display: block;
   margin: 40px 0;
 }
 
@@ -278,7 +283,7 @@ header nav ul li a img{
 
 .subscription-type .point{
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   font-weight: 800;
 }
 
@@ -294,6 +299,19 @@ header nav ul li a img{
 .team-left .price{
   margin-bottom: 48px;
 }
+/* fine section abbonamenti */
+/* -------------------------------------------- */
+
+/* section partner */
+/* -------------------------------------------- */
+.partner-image{
+  width: 60%;
+}
+
+.partner-text{
+  width: 40%;
+}
+
 /* -------------------------------------------- */
 
 /* FOOTER */
