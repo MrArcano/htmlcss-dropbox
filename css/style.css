@@ -495,9 +495,50 @@ header nav ul li a img{
 .faq:hover .fa-angle-up{
   display: block;
 }
-
 /* -------------------------------------------- */
 
 
 
 /* FOOTER */
+/* -------------------------------------------- */
+
+footer{
+  background-color: black;
+  color: white;
+}
+
+footer a:not(.default){
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+footer .container{
+  margin-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+footer nav{
+  justify-content: space-between;
+}
+
+footer li{
+  padding-bottom: 16px;
+}
+
+footer li:first-child{
+  padding-bottom: 32px;
+}
+
+footer .separator{
+  width: 10%;
+}
+
+.fa-earth-americas{
+  padding-right: 4px;
+}
+/* -------------------------------------------- */
