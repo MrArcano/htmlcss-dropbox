@@ -14,6 +14,8 @@
 html{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+
+  scroll-behavior: smooth;
 }
 
 img{
@@ -142,12 +144,13 @@ header nav ul li a{
 }
 
 header ul li:not(.no-border):hover {
-  border-bottom: 2px solid white;
+  box-shadow: 0px 1px 0px 0px black;
+  border-bottom: 1px solid black;
 }
 
 header nav ul li a img{
   object-fit: cover;
-  
+  vertical-align: middle;
 }
 
 
@@ -207,7 +210,6 @@ header nav ul li a img{
   content: "";
   display: inline-block;
   box-sizing: border-box;
-  /*DOMANDA: perchè devo aggiungere border-box?? */
   
   width: 16px;
   height: 16px;
@@ -338,6 +340,15 @@ header nav ul li a img{
 .feature{
   margin-top: 48px;
   width: 30%;
+  padding: 16px;
+  border-radius: 20px;
+
+  transition: all 0.5s;
+}
+
+.feature:hover{
+  box-shadow: 0 0 10px lightgray;
+  scale: 1.05;
 }
 
 .feature h3{
@@ -357,7 +368,6 @@ header nav ul li a img{
 /* -------------------------------------------- */
 .bkg-light-green{
   background-color: #a2d39b;
-  border: 16px solid rgba(255, 255, 255, 0.5);
 }
 .bkg-dark-red{
   background-color: #61082b;
@@ -398,12 +408,16 @@ header nav ul li a img{
   color: white;
 }
 
-.logo-team:active{
-  border: 16px solid rgba(255, 255, 255, 0.5);
+.logo-team:active,
+.logo-active{
+  box-shadow: 0px 0px 0px 16px rgba(255, 255, 255, 0.5) inset;
+}
+
+.team-info img{
+  width: 50%;
 }
 
 .logo-team img{
-  width: 50%;
   position: relative;
   top: 50%;
   transform: translate(0,-50%);
@@ -416,9 +430,7 @@ header nav ul li a img{
   overflow-y: auto;
 }
 
-.team-info .center img{
-  width: 50%;
-}
+
 
 .team-info .center p{
   margin-bottom: 50px;
@@ -461,8 +473,6 @@ header nav ul li a img{
   position: relative;
 }
 
-
-
 .list-faq p:nth-child(odd){
   font-weight: 800;
 }
@@ -477,9 +487,12 @@ header nav ul li a img{
 
 .faq p:last-of-type{
   display: none;
+  opacity: 0;
+  transition: opacity 2s linear 1s; /* non funziona */
 }
 
 .faq:hover p:last-of-type{
+  opacity: 1;
   display: block;
 }
 
